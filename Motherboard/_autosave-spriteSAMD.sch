@@ -1257,10 +1257,10 @@ $EndComp
 Text Label 1200 4100 0    50   ~ 0
 ~RESET
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J6
 U 1 1 5DB0C730
 P 6300 3800
-F 0 "J?" H 6380 3792 50  0000 L CNN
+F 0 "J6" H 6380 3792 50  0000 L CNN
 F 1 "Conn_01x02" H 6380 3701 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 3800 50  0001 C CNN
 F 3 "~" H 6300 3800 50  0001 C CNN
