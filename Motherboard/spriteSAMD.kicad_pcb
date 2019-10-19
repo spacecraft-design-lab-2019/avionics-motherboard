@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.2)
-    (drawings 28)
+    (drawings 27)
     (tracks 0)
     (zones 0)
     (modules 39)
@@ -838,7 +838,7 @@
     )
   )
 
-  (module Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias (layer Top) (tedit 5A671464) (tstamp 5DABC56A)
+  (module Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias (layer Top) (tedit 5A671464) (tstamp 5DABE354)
     (at 94.8436 90.9447 180)
     (descr "16-Lead Plastic HTSSOP (4.4x5x1.2mm); Thermal pad with vias; (http://www.ti.com/lit/ds/symlink/drv8833.pdf)")
     (tags "SSOP 0.65")
@@ -2180,7 +2180,6 @@
   (gr_text DIO (at 102.5906 106.7308) (layer F.SilkS) (tstamp 5C4EC1AB)
     (effects (font (size 0.508 0.508) (thickness 0.0889)))
   )
-  (gr_line (start 111.68 81.875) (end 112.188 81.875) (layer F.SilkS) (width 0.15) (tstamp 5C3F7878))
   (gr_circle (center 92.91828 99.02952) (end 92.97924 99.03968) (layer F.SilkS) (width 0.15) (tstamp 5DABDC60))
   (gr_circle (center 92.91828 99.02952) (end 93.06814 99.11842) (layer F.SilkS) (width 0.15))
   (gr_line (start 111.506 99.314) (end 112.014 99.314) (layer F.SilkS) (width 0.15))

@@ -366,7 +366,7 @@ F 3 "" H 1150 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 8000 4650 0    79   ~ 0
-LoRa RADIO\n
+UHF RADIO\n
 $Comp
 L Device:C_Small C1
 U 1 1 5DA4F94A
@@ -982,34 +982,34 @@ Wire Wire Line
 $Comp
 L symbols:xf2m-2415-1a J4
 U 1 1 5DBA91E1
-P 5850 1050
-F 0 "J4" H 6300 1315 50  0000 C CNN
-F 1 "xf2m-2415-1a" H 6300 1224 50  0000 C CNN
-F 2 "custom-footprints:XF2M-2415-1A" H 6600 1150 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/0fd2/0900766b80fd28a0.pdf" H 6600 1050 50  0001 L CNN
-F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Connector Locking Mechanism, Gold Plated Contacts" H 6600 950 50  0001 L CNN "Description"
-	1    5850 1050
+P 5900 1400
+F 0 "J4" H 6350 1665 50  0000 C CNN
+F 1 "xf2m-2415-1a" H 6350 1574 50  0000 C CNN
+F 2 "custom-footprints:XF2M-2415-1A" H 6650 1500 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0fd2/0900766b80fd28a0.pdf" H 6650 1400 50  0001 L CNN
+F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Connector Locking Mechanism, Gold Plated Contacts" H 6650 1300 50  0001 L CNN "Description"
+	1    5900 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L symbols:XF2M-1015-1A J5
 U 1 1 5DAE07E7
-P 5850 2650
-F 0 "J5" H 6300 2915 50  0000 C CNN
-F 1 "XF2M-1015-1A" H 6300 2824 50  0000 C CNN
-F 2 "custom-footprints:XF2M-1015-1A" H 6600 2750 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" H 6600 2650 50  0001 L CNN
-F 4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" H 6600 2550 50  0001 L CNN "Description"
-F 5 "" H 6600 2450 50  0001 L CNN "Height"
-F 6 "Omron Electronics" H 6600 2350 50  0001 L CNN "Manufacturer_Name"
-F 7 "XF2M-1015-1A" H 6600 2250 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "653-XF2M-1015-1A" H 6600 2150 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" H 6600 2050 50  0001 L CNN "Mouser Price/Stock"
-F 10 "7315772P" H 6600 1950 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/7315772P" H 6600 1850 50  0001 L CNN "RS Price/Stock"
-F 12 "70667825" H 6600 1750 50  0001 L CNN "Allied_Number"
-F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" H 6600 1650 50  0001 L CNN "Allied Price/Stock"
-	1    5850 2650
+P 5900 3000
+F 0 "J5" H 6350 3265 50  0000 C CNN
+F 1 "XF2M-1015-1A" H 6350 3174 50  0000 C CNN
+F 2 "custom-footprints:XF2M-1015-1A" H 6650 3100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" H 6650 3000 50  0001 L CNN
+F 4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" H 6650 2900 50  0001 L CNN "Description"
+F 5 "" H 6650 2800 50  0001 L CNN "Height"
+F 6 "Omron Electronics" H 6650 2700 50  0001 L CNN "Manufacturer_Name"
+F 7 "XF2M-1015-1A" H 6650 2600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "653-XF2M-1015-1A" H 6650 2500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" H 6650 2400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7315772P" H 6650 2300 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7315772P" H 6650 2200 50  0001 L CNN "RS Price/Stock"
+F 12 "70667825" H 6650 2100 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" H 6650 2000 50  0001 L CNN "Allied Price/Stock"
+	1    5900 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1059,23 +1059,23 @@ $EndComp
 $Comp
 L Driver_Motor:DRV8833PWP U3
 U 1 1 5DAC28BE
-P 8550 1450
-F 0 "U3" H 8550 2331 50  0000 C CNN
-F 1 "DRV8833PWP" H 8550 2240 50  0000 C CNN
-F 2 "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias" H 9000 1900 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/drv8833.pdf" H 8400 2000 50  0001 C CNN
-	1    8550 1450
+P 8250 1900
+F 0 "U3" H 8250 2781 50  0000 C CNN
+F 1 "DRV8833PWP" H 8250 2690 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias" H 8700 2350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv8833.pdf" H 8100 2450 50  0001 C CNN
+	1    8250 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Driver_Motor:DRV8833PWP U5
 U 1 1 5DAC356C
-P 8600 2900
-F 0 "U5" H 8600 3781 50  0000 C CNN
-F 1 "DRV8833PWP" H 8600 3690 50  0000 C CNN
-F 2 "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias" H 9050 3350 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/drv8833.pdf" H 8450 3450 50  0001 C CNN
-	1    8600 2900
+P 9550 1950
+F 0 "U5" H 9550 2831 50  0000 C CNN
+F 1 "DRV8833PWP" H 9550 2740 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias" H 10000 2400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv8833.pdf" H 9400 2500 50  0001 C CNN
+	1    9550 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1257,10 +1257,10 @@ $EndComp
 Text Label 1200 4100 0    50   ~ 0
 ~RESET
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J6
 U 1 1 5DB0C730
 P 6300 3800
-F 0 "J?" H 6380 3792 50  0000 L CNN
+F 0 "J6" H 6380 3792 50  0000 L CNN
 F 1 "Conn_01x02" H 6380 3701 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 3800 50  0001 C CNN
 F 3 "~" H 6300 3800 50  0001 C CNN
@@ -1275,4 +1275,12 @@ Wire Wire Line
 	5800 3900 6100 3900
 Wire Wire Line
 	6100 3800 5800 3800
+Text Notes 8150 950  0    79   ~ 0
+PLACEHOLDER H-BRIDGES
+Text Notes 3800 650  0    79   ~ 0
+WATCH-DOG TIMER
+Text Notes 1950 700  0    79   ~ 0
+IMU
+Text Notes 5900 1000 0    79   ~ 0
+FLAT FLEX CONN
 $EndSCHEMATC
