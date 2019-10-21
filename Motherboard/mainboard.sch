@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:mainboard-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -1256,25 +1256,6 @@ F 3 "" H 2850 1250 50  0001 C CNN
 $EndComp
 Text Label 1200 4100 0    50   ~ 0
 ~RESET
-$Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 5DB0C730
-P 6300 3800
-F 0 "J6" H 6380 3792 50  0000 L CNN
-F 1 "Conn_01x02" H 6380 3701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 3800 50  0001 C CNN
-F 3 "~" H 6300 3800 50  0001 C CNN
-	1    6300 3800
-	1    0    0    -1  
-$EndComp
-Text GLabel 5800 3800 0    50   BiDi ~ 0
-BATT_P
-Text GLabel 5800 3900 0    50   BiDi ~ 0
-BATT_N
-Wire Wire Line
-	5800 3900 6100 3900
-Wire Wire Line
-	6100 3800 5800 3800
 Text Notes 8150 950  0    79   ~ 0
 PLACEHOLDER H-BRIDGES
 Text Notes 3800 650  0    79   ~ 0
