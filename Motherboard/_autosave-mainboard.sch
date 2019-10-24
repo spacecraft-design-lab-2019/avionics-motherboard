@@ -524,10 +524,6 @@ Text GLabel 7750 5350 0    59   Input ~ 0
 MISO
 Wire Wire Line
 	7750 5350 7850 5350
-Wire Wire Line
-	8850 5650 8950 5650
-Text GLabel 8950 5650 2    50   BiDi ~ 0
-RF_DIO2
 $Comp
 L power:GND #PWR0140
 U 1 1 5D1CBF31
@@ -559,26 +555,8 @@ Wire Wire Line
 	7850 5450 7750 5450
 Wire Wire Line
 	7850 5650 7750 5650
-Text GLabel 7750 5450 0    50   Input ~ 0
-CS_RF1
-Text GLabel 7750 5650 0    50   BiDi ~ 0
-RF_RST
-Text GLabel 8950 5550 2    50   BiDi ~ 0
-RF_DIO3
-Text GLabel 8950 5450 2    50   Output ~ 0
-RF_BUSY
-Text GLabel 8950 5750 2    50   BiDi ~ 0
-RF_DIO1
-Wire Wire Line
-	8950 5550 8850 5550
-Wire Wire Line
-	8950 5750 8850 5750
 Wire Wire Line
 	8950 5450 8850 5450
-Text GLabel 8950 5850 2    50   BiDi ~ 0
-RF_DIO0
-Wire Wire Line
-	8950 5850 8850 5850
 Text GLabel 4600 4500 2    50   BiDi ~ 0
 DAC1
 $Comp
@@ -846,11 +824,7 @@ F 3 "" H 9400 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 4200 8800 4200
-Wire Wire Line
 	8900 4400 8800 4400
-Text GLabel 8800 4200 0    50   Input ~ 0
-CS_RF2
 Text GLabel 8800 4400 0    50   BiDi ~ 0
 RF2_RST
 Text GLabel 10000 4200 2    50   Output ~ 0
@@ -1294,7 +1268,7 @@ Text GLabel 5950 3150 2    50   Input ~ 0
 CS_CAM
 Text GLabel 5950 3050 2    50   Input ~ 0
 BATT_N
-Text GLabel 4550 5700 2    50   Input ~ 0
+Text GLabel -1100 4600 2    50   Input ~ 0
 CS_CAM
 Connection ~ 1450 7000
 Wire Wire Line
@@ -1337,7 +1311,7 @@ F 3 "" H 2950 5900 50  0001 C CNN
 	1    2950 5900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 6200 2    50   Input ~ 0
+Text GLabel -1050 4400 2    50   Input ~ 0
 EN_CAM
 Text GLabel 5300 5800 2    59   BiDi ~ 0
 SCL2
@@ -1379,8 +1353,6 @@ Text GLabel 4700 4000 2    59   BiDi ~ 0
 SDA1
 Text GLabel 4700 4100 2    59   BiDi ~ 0
 SCL1
-Wire Wire Line
-	4550 5700 4450 5700
 Text Notes 1650 7550 0    50   ~ 0
 UART:\nTX: PB08\nRX: PB09\n
 Text Notes 2100 7650 0    50   ~ 0
@@ -1391,12 +1363,10 @@ Text GLabel 6100 1950 2    59   BiDi ~ 0
 SDA1
 Text GLabel 5200 1950 0    59   BiDi ~ 0
 SCL1
-Text GLabel 5200 1250 0    59   BiDi ~ 0
-SCL2
 Text GLabel 6100 1250 2    59   BiDi ~ 0
+SCL2
+Text GLabel 5200 1250 0    59   BiDi ~ 0
 SDA2
-Wire Wire Line
-	4550 6200 4450 6200
 $Comp
 L mainboard-rescue:R_US-Device R4
 U 1 1 5DB0C8A9
@@ -1490,8 +1460,6 @@ Wire Wire Line
 Connection ~ 5250 5800
 Wire Wire Line
 	5250 5800 5300 5800
-Text GLabel 4450 6000 2    50   Output ~ 0
-CS_IMU
 $Comp
 L mainboard-rescue:XF2M-1015-1A-symbols J5
 U 1 1 5DAE07E7
@@ -1626,25 +1594,25 @@ Text GLabel 4650 7350 0    50   BiDi ~ 0
 ~RESET
 Wire Wire Line
 	4650 7350 4700 7350
-Text GLabel -3900 5050 0    50   Input ~ 0
+Text GLabel -1750 5200 0    50   Input ~ 0
 DXZ_FAULT
-Text GLabel -3900 5150 0    50   Input ~ 0
+Text GLabel -1750 5300 0    50   Input ~ 0
 MXZ_EN
-Text GLabel -3900 5350 0    50   Input ~ 0
+Text GLabel -1750 5500 0    50   Input ~ 0
 MINX_1
-Text GLabel -3900 5450 0    50   Input ~ 0
+Text GLabel -1750 5600 0    50   Input ~ 0
 MINX_2
-Text GLabel -3900 5650 0    50   Input ~ 0
+Text GLabel -1750 5800 0    50   Input ~ 0
 MINZ_1
-Text GLabel -3900 5750 0    50   Input ~ 0
+Text GLabel -1750 5900 0    50   Input ~ 0
 MINZ_2
-Text GLabel -3400 5050 0    50   Input ~ 0
+Text GLabel -1250 5200 0    50   Input ~ 0
 DY_FAULT
-Text GLabel -3400 5150 0    50   Input ~ 0
+Text GLabel -1250 5300 0    50   Input ~ 0
 MY_EN
-Text GLabel -3400 5350 0    50   Input ~ 0
+Text GLabel -1250 5500 0    50   Input ~ 0
 MINY_1
-Text GLabel -3400 5450 0    50   Input ~ 0
+Text GLabel -1250 5600 0    50   Input ~ 0
 MINY_2
 $Comp
 L Mechanical:Fiducial FID1
@@ -1692,18 +1660,38 @@ F 3 "~" H 9700 6650 50  0001 C CNN
 $EndComp
 Text GLabel -2050 6450 2    50   BiDi ~ 0
 RF1_BUSY
-Text GLabel -2050 6300 2    50   BiDi ~ 0
-RF2_BUSY
 Text GLabel -2050 6550 2    50   BiDi ~ 0
 RF1_RST
-Text GLabel -2050 6200 2    50   BiDi ~ 0
-RF2_RST
 Text GLabel -2050 6650 2    50   BiDi ~ 0
 RF1_CS
-Text GLabel -2050 6100 2    50   BiDi ~ 0
-RF2_CS
 Text GLabel -1550 6450 2    50   BiDi ~ 0
 RF1_IO1
+Text GLabel 8800 4200 0    50   BiDi ~ 0
+RF2_CS
+Wire Wire Line
+	8800 4200 8900 4200
+Text GLabel -2050 6100 2    50   BiDi ~ 0
+RF2_CS
 Text GLabel -1550 6300 2    50   BiDi ~ 0
 RF2_IO1
+Text GLabel -2050 6200 2    50   BiDi ~ 0
+RF2_RST
+Text GLabel -2050 6300 2    50   BiDi ~ 0
+RF2_BUSY
+Text GLabel 10000 4500 2    50   BiDi ~ 0
+RF2_IO1
+Wire Wire Line
+	10000 4500 9900 4500
+Text GLabel 8950 5450 2    50   BiDi ~ 0
+RF1_BUSY
+Text GLabel 7750 5650 0    50   BiDi ~ 0
+RF1_RST
+Text GLabel 7750 5450 0    50   BiDi ~ 0
+RF1_CS
+Text GLabel 8950 5750 2    50   BiDi ~ 0
+RF1_IO1
+Wire Wire Line
+	8950 5750 8850 5750
+Text GLabel -1100 4850 2    50   Output ~ 0
+CS_IMU
 $EndSCHEMATC

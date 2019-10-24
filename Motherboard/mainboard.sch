@@ -524,10 +524,6 @@ Text GLabel 7750 5350 0    59   Input ~ 0
 MISO
 Wire Wire Line
 	7750 5350 7850 5350
-Wire Wire Line
-	8850 5650 8950 5650
-Text GLabel 8950 5650 2    50   BiDi ~ 0
-RF_DIO2
 $Comp
 L power:GND #PWR0140
 U 1 1 5D1CBF31
@@ -559,46 +555,8 @@ Wire Wire Line
 	7850 5450 7750 5450
 Wire Wire Line
 	7850 5650 7750 5650
-Text GLabel 7750 5450 0    50   Input ~ 0
-CS_RF1
-Text GLabel 7750 5650 0    50   BiDi ~ 0
-RF_RST
-Text GLabel 8950 5550 2    50   BiDi ~ 0
-RF_DIO3
-Text GLabel 8950 5450 2    50   Output ~ 0
-RF_BUSY
-Text GLabel 8950 5750 2    50   BiDi ~ 0
-RF_DIO1
-Wire Wire Line
-	8950 5550 8850 5550
-Wire Wire Line
-	8950 5750 8850 5750
 Wire Wire Line
 	8950 5450 8850 5450
-Wire Wire Line
-	1450 5800 1350 5800
-Text GLabel 1350 5800 0    50   Input ~ 0
-RF_CS
-Text GLabel 4550 5300 2    50   BiDi ~ 0
-RF_RST
-Wire Wire Line
-	1450 6100 1350 6100
-Text GLabel 1350 6100 0    50   BiDi ~ 0
-RF_DIO2
-Text GLabel 4550 5600 2    50   BiDi ~ 0
-RF_DIO3
-Text GLabel 4550 5400 2    50   Output ~ 0
-RF_BUSY
-Text GLabel 4550 6900 2    50   BiDi ~ 0
-RF_DIO1
-Text GLabel 8950 5850 2    50   BiDi ~ 0
-RF_DIO0
-Wire Wire Line
-	8950 5850 8850 5850
-Text GLabel 1350 5400 0    50   BiDi ~ 0
-RF_DIO0
-Wire Wire Line
-	1350 5400 1450 5400
 Text GLabel 4600 4500 2    50   BiDi ~ 0
 DAC1
 $Comp
@@ -866,11 +824,7 @@ F 3 "" H 9400 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 4200 8800 4200
-Wire Wire Line
 	8900 4400 8800 4400
-Text GLabel 8800 4200 0    50   Input ~ 0
-CS_RF2
 Text GLabel 8800 4400 0    50   BiDi ~ 0
 RF2_RST
 Text GLabel 10000 4200 2    50   Output ~ 0
@@ -1089,7 +1043,7 @@ L power:GND #PWR0124
 U 1 1 5DBF1F8E
 P 8400 1050
 F 0 "#PWR0124" H 8400 800 50  0001 C CNN
-F 1 "GND" H 8405 877 50  0000 C CNN
+F 1 "GND" H 8550 1000 50  0000 C CNN
 F 2 "" H 8400 1050 50  0001 C CNN
 F 3 "" H 8400 1050 50  0001 C CNN
 	1    8400 1050
@@ -1161,7 +1115,7 @@ L power:GND #PWR0128
 U 1 1 5DCE2BBF
 P 8100 1850
 F 0 "#PWR0128" H 8100 1600 50  0001 C CNN
-F 1 "GND" H 8105 1677 50  0000 C CNN
+F 1 "GND" H 8250 1800 50  0000 C CNN
 F 2 "" H 8100 1850 50  0001 C CNN
 F 3 "" H 8100 1850 50  0001 C CNN
 	1    8100 1850
@@ -1172,7 +1126,7 @@ L power:GND #PWR0129
 U 1 1 5DCE9737
 P 8100 2250
 F 0 "#PWR0129" H 8100 2000 50  0001 C CNN
-F 1 "GND" H 8105 2077 50  0000 C CNN
+F 1 "GND" H 8250 2200 50  0000 C CNN
 F 2 "" H 8100 2250 50  0001 C CNN
 F 3 "" H 8100 2250 50  0001 C CNN
 	1    8100 2250
@@ -1251,17 +1205,13 @@ F 3 "" H 9400 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8800 1500 0    50   Input ~ 0
-DXZ_FAULT
+DY_FAULT
 Text GLabel 8800 1600 0    50   Input ~ 0
-MXZ_EN
+MY_EN
 Text GLabel 8800 1800 0    50   Input ~ 0
-MINX_1
+MINY_1
 Text GLabel 8800 1900 0    50   Input ~ 0
-MINX_2
-Text GLabel 8800 2100 0    50   Input ~ 0
-MINZ_1
-Text GLabel 8800 2200 0    50   Input ~ 0
-MINZ_2
+MINY_2
 $Comp
 L mainboard-rescue:DRV8848-Driver_Motor U5
 U 1 1 5DD0AEE3
@@ -1274,13 +1224,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/drv8848.pdf" H 8250 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10000 1600 2    50   Input ~ 0
-MINX_1
+MOY_1
 Text GLabel 10000 1700 2    50   Input ~ 0
-MINX_2
-Text GLabel 10000 2000 2    50   Input ~ 0
-MOZ_1
-Text GLabel 10000 2100 2    50   Input ~ 0
-MOZ_2
+MOY_2
 Wire Wire Line
 	9400 2500 9400 2400
 Wire Wire Line
@@ -1291,29 +1237,23 @@ L power:GND #PWR0132
 U 1 1 5DD0AEF2
 P 10000 1800
 F 0 "#PWR0132" H 10000 1550 50  0001 C CNN
-F 1 "GND" H 10005 1627 50  0000 C CNN
+F 1 "GND" H 10150 1750 50  0000 C CNN
 F 2 "" H 10000 1800 50  0001 C CNN
 F 3 "" H 10000 1800 50  0001 C CNN
 	1    10000 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 1850 10000 1800
 $Comp
 L power:GND #PWR0133
 U 1 1 5DD0AEF9
 P 10000 2200
 F 0 "#PWR0133" H 10000 1950 50  0001 C CNN
-F 1 "GND" H 10005 2027 50  0000 C CNN
+F 1 "GND" H 10150 2150 50  0000 C CNN
 F 2 "" H 10000 2200 50  0001 C CNN
 F 3 "" H 10000 2200 50  0001 C CNN
 	1    10000 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 2250 10000 2200
-Connection ~ 10000 1800
-Connection ~ 10000 2200
 Text GLabel 5950 3250 2    50   Output ~ 0
 MOSI
 Text GLabel 5050 3250 0    50   Input ~ 0
@@ -1341,15 +1281,11 @@ Wire Wire Line
 Wire Wire Line
 	4450 7100 5000 7100
 Wire Wire Line
-	4550 6900 4450 6900
-Wire Wire Line
 	5450 6800 4450 6800
 Wire Wire Line
 	5450 6700 4450 6700
 Wire Wire Line
 	4450 5800 5250 5800
-Wire Wire Line
-	4450 5300 4550 5300
 Wire Wire Line
 	4550 5100 4450 5100
 Wire Wire Line
@@ -1362,10 +1298,6 @@ Wire Wire Line
 	4450 4300 5150 4300
 Wire Wire Line
 	4450 4200 4600 4200
-Wire Wire Line
-	4550 5600 4450 5600
-Wire Wire Line
-	4550 5400 4450 5400
 Wire Wire Line
 	5300 5900 5100 5900
 $Comp
@@ -1668,4 +1600,102 @@ Text GLabel 4650 7350 0    50   BiDi ~ 0
 ~RESET
 Wire Wire Line
 	4650 7350 4700 7350
+Text GLabel -1750 5200 0    50   Input ~ 0
+DXZ_FAULT
+Text GLabel -1750 5300 0    50   Input ~ 0
+MXZ_EN
+Text GLabel -1750 5500 0    50   Input ~ 0
+MINX_1
+Text GLabel -1750 5600 0    50   Input ~ 0
+MINX_2
+Text GLabel -1750 5800 0    50   Input ~ 0
+MINZ_1
+Text GLabel -1750 5900 0    50   Input ~ 0
+MINZ_2
+Text GLabel -1250 5200 0    50   Input ~ 0
+DY_FAULT
+Text GLabel -1250 5300 0    50   Input ~ 0
+MY_EN
+Text GLabel -1250 5500 0    50   Input ~ 0
+MINY_1
+Text GLabel -1250 5600 0    50   Input ~ 0
+MINY_2
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5DB69FCA
+P 9700 6050
+F 0 "FID1" H 9785 6096 50  0000 L CNN
+F 1 "Fiducial" H 9785 6005 50  0000 L CNN
+F 2 "custom-footprints:Fiducial_1mm_Silkscreen" H 9700 6050 50  0001 C CNN
+F 3 "~" H 9700 6050 50  0001 C CNN
+	1    9700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5DB71FBE
+P 9700 6250
+F 0 "FID2" H 9785 6296 50  0000 L CNN
+F 1 "Fiducial" H 9785 6205 50  0000 L CNN
+F 2 "custom-footprints:Fiducial_1mm_Silkscreen" H 9700 6250 50  0001 C CNN
+F 3 "~" H 9700 6250 50  0001 C CNN
+	1    9700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5DB7214D
+P 9700 6450
+F 0 "FID3" H 9785 6496 50  0000 L CNN
+F 1 "Fiducial" H 9785 6405 50  0000 L CNN
+F 2 "custom-footprints:Fiducial_1mm_Silkscreen" H 9700 6450 50  0001 C CNN
+F 3 "~" H 9700 6450 50  0001 C CNN
+	1    9700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5DB722FE
+P 9700 6650
+F 0 "FID4" H 9785 6696 50  0000 L CNN
+F 1 "Fiducial" H 9785 6605 50  0000 L CNN
+F 2 "custom-footprints:Fiducial_1mm_Silkscreen" H 9700 6650 50  0001 C CNN
+F 3 "~" H 9700 6650 50  0001 C CNN
+	1    9700 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel -2050 6450 2    50   BiDi ~ 0
+RF1_BUSY
+Text GLabel -2050 6550 2    50   BiDi ~ 0
+RF1_RST
+Text GLabel -2050 6650 2    50   BiDi ~ 0
+RF1_CS
+Text GLabel -1550 6450 2    50   BiDi ~ 0
+RF1_IO1
+Text GLabel 8800 4200 0    50   BiDi ~ 0
+RF2_CS
+Wire Wire Line
+	8800 4200 8900 4200
+Text GLabel -2050 6100 2    50   BiDi ~ 0
+RF2_CS
+Text GLabel -1550 6300 2    50   BiDi ~ 0
+RF2_IO1
+Text GLabel -2050 6200 2    50   BiDi ~ 0
+RF2_RST
+Text GLabel -2050 6300 2    50   BiDi ~ 0
+RF2_BUSY
+Text GLabel 10000 4500 2    50   BiDi ~ 0
+RF2_IO1
+Wire Wire Line
+	10000 4500 9900 4500
+Text GLabel 8950 5450 2    50   BiDi ~ 0
+RF1_BUSY
+Text GLabel 7750 5650 0    50   BiDi ~ 0
+RF1_RST
+Text GLabel 7750 5450 0    50   BiDi ~ 0
+RF1_CS
+Text GLabel 8950 5750 2    50   BiDi ~ 0
+RF1_IO1
+Wire Wire Line
+	8950 5750 8850 5750
 $EndSCHEMATC
