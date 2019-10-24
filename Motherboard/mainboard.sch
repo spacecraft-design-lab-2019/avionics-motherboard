@@ -776,18 +776,6 @@ RF2_BUSY
 Wire Wire Line
 	10000 4200 9900 4200
 $Comp
-L mainboard-rescue:xf2m-2415-1a-symbols J4
-U 1 1 5DBA91E1
-P 5400 -1800
-F 0 "J4" H 5850 -1535 50  0000 C CNN
-F 1 "xf2m-2415-1a" H 5850 -1626 50  0000 C CNN
-F 2 "custom-footprints:XF2M-2415-1A" H 6150 -1700 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/0fd2/0900766b80fd28a0.pdf" H 6150 -1800 50  0001 L CNN
-F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Connector Locking Mechanism, Gold Plated Contacts" H 6150 -1900 50  0001 L CNN "Description"
-	1    5400 -1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L mainboard-rescue:MAX708RESA-T-symbols U6
 U 1 1 5DAB91F7
 P 4800 1150
@@ -1166,23 +1154,19 @@ Text GLabel 5300 5800 2    59   BiDi ~ 0
 SCL2
 Text GLabel 6300 -800 2    50   Input ~ 0
 3V3
-Text GLabel 5400 -800 0    50   Input ~ 0
-GND
-Text GLabel 6300 -700 2    50   Input ~ 0
+Text GLabel 8950 -800 2    50   Input ~ 0
 BATT_P
-Text GLabel 5400 -700 0    50   Input ~ 0
-BATT_N
 Text GLabel 5400 -1400 0    50   Input ~ 0
 BURN1
 Text GLabel 5400 -1500 0    50   Input ~ 0
 BURN2
-Text GLabel 8950 -800 2    50   Input ~ 0
+Text GLabel 8950 -900 2    50   Input ~ 0
 COIL1_P
 Wire Wire Line
 	4750 1450 4700 1450
 Wire Wire Line
 	4750 1450 4750 1500
-Text GLabel 8950 -1000 2    50   Input ~ 0
+Text GLabel 8950 -1100 2    50   Input ~ 0
 COIL3_P
 Text GLabel 5300 5900 2    59   BiDi ~ 0
 SDA2
@@ -1330,14 +1314,6 @@ Text GLabel 7500 750  0    50   Input ~ 0
 BATT_P
 Text GLabel 9400 700  0    50   Input ~ 0
 BATT_P
-Text GLabel 6900 1450 0    50   Input ~ 0
-3V3
-Text GLabel 8150 1400 2    50   Input ~ 0
-3V3
-Text GLabel 8800 1400 0    50   Input ~ 0
-3V3
-Text GLabel 10050 1350 2    50   Input ~ 0
-3V3
 $Comp
 L mainboard-rescue:C_Small-Device C15
 U 1 1 5DB6EC0C
@@ -1749,78 +1725,178 @@ F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m36151a/70354816
 $EndComp
 NoConn ~ 8750 -700
 NoConn ~ 7850 -700
-Text GLabel 8950 -1100 2    50   Input ~ 0
+Text GLabel 8950 -1200 2    50   Input ~ 0
 COIL4_N
 Wire Wire Line
-	7850 -900 7650 -900
-Wire Wire Line
-	7650 -900 7650 -800
-Wire Wire Line
-	7650 -800 7850 -800
-Text Notes 7600 -800 2    50   ~ 0
+	7800 -900 7850 -900
+Text Notes 7400 -850 2    50   ~ 0
 COIL1_N
-Wire Wire Line
-	7850 -1000 7650 -1000
-Wire Wire Line
-	7650 -1000 7650 -1100
-Wire Wire Line
-	7650 -1100 7850 -1100
-Text Notes 7600 -1000 2    50   ~ 0
+Text Notes 7400 -1050 2    50   ~ 0
 COIL3_N
-Text GLabel 8950 -1200 2    50   Input ~ 0
+Text GLabel 8950 -1700 2    50   Input ~ 0
 COIL5_P
 Wire Wire Line
-	7850 -1300 7650 -1300
-Wire Wire Line
-	7650 -1300 7650 -1200
-Wire Wire Line
-	7650 -1200 7850 -1200
-Wire Wire Line
-	8750 -800 8950 -800
-Text GLabel 8950 -900 2    50   Input ~ 0
+	8750 -900 8950 -900
+Text GLabel 8950 -1000 2    50   Input ~ 0
 COIL2_N
 Wire Wire Line
-	8950 -900 8750 -900
-Text Notes 7600 -850 2    50   ~ 0
+	8950 -1000 8750 -1000
+Text Notes 7400 -950 2    50   ~ 0
 COIL2_P
-Text Notes 7600 -1050 2    50   ~ 0
+Text Notes 7400 -1150 2    50   ~ 0
 COIL4_P
-Text Notes 7600 -1200 2    50   ~ 0
+Text Notes 7400 -1650 2    50   ~ 0
 COIL5_N
-Text Notes 7600 -1250 2    50   ~ 0
+Text Notes 7400 -1750 2    50   ~ 0
 COIL6_P
 Wire Wire Line
-	8750 -1200 8950 -1200
+	8750 -1700 8950 -1700
 Wire Wire Line
-	8750 -1000 8950 -1000
+	8750 -1100 8950 -1100
 Wire Wire Line
-	8950 -1100 8750 -1100
-Text GLabel 8950 -1300 2    50   Input ~ 0
+	8950 -1200 8750 -1200
+Text GLabel 8950 -1800 2    50   Input ~ 0
 COIL6_N
 Wire Wire Line
-	8950 -1300 8750 -1300
+	8950 -1800 8750 -1800
 Wire Notes Line
-	9350 -900 9400 -900
+	9350 -1000 9400 -1000
 Wire Notes Line
-	9400 -900 9400 -800
+	9400 -1000 9400 -900
 Wire Notes Line
-	9400 -800 9350 -800
+	9400 -900 9350 -900
 Wire Notes Line
-	9350 -1100 9400 -1100
+	9350 -1200 9400 -1200
 Wire Notes Line
-	9400 -1100 9400 -1000
+	9400 -1200 9400 -1100
 Wire Notes Line
-	9400 -1000 9350 -1000
+	9400 -1100 9350 -1100
 Wire Notes Line
-	9350 -1300 9400 -1300
+	9350 -1800 9400 -1800
 Wire Notes Line
-	9400 -1300 9400 -1200
+	9400 -1800 9400 -1700
 Wire Notes Line
-	9400 -1200 9350 -1200
-Text Notes 9500 -1200 2    50   ~ 0
+	9400 -1700 9350 -1700
+Text Notes 9500 -1700 2    50   ~ 0
 Y
-Text Notes 9500 -1000 2    50   ~ 0
+Text Notes 9500 -1100 2    50   ~ 0
 Z
-Text Notes 9500 -800 2    50   ~ 0
+Text Notes 9500 -900 2    50   ~ 0
 X
+$Comp
+L mainboard-rescue:R_US-Device R12
+U 1 1 5DE2535B
+P 7650 -900
+F 0 "R12" V 7600 -800 50  0000 C CNN
+F 1 "0" V 7600 -1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7690 -910 50  0001 C CNN
+F 3 "~" H 7650 -900 50  0001 C CNN
+	1    7650 -900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 -1000 7500 -900
+Wire Wire Line
+	7500 -1000 7850 -1000
+Wire Wire Line
+	7800 -1100 7850 -1100
+$Comp
+L mainboard-rescue:R_US-Device R11
+U 1 1 5DE4E3AF
+P 7650 -1100
+F 0 "R11" V 7600 -1000 50  0000 C CNN
+F 1 "0" V 7600 -1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7690 -1110 50  0001 C CNN
+F 3 "~" H 7650 -1100 50  0001 C CNN
+	1    7650 -1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 -1200 7500 -1100
+Wire Wire Line
+	7500 -1200 7850 -1200
+Wire Wire Line
+	7800 -1700 7850 -1700
+$Comp
+L mainboard-rescue:R_US-Device R1
+U 1 1 5DE5629A
+P 7650 -1700
+F 0 "R1" V 7550 -1600 50  0000 C CNN
+F 1 "0" V 7550 -1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7690 -1710 50  0001 C CNN
+F 3 "~" H 7650 -1700 50  0001 C CNN
+	1    7650 -1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 -1800 7500 -1700
+Wire Wire Line
+	7500 -1800 7850 -1800
+Wire Wire Line
+	8950 -800 8750 -800
+Wire Wire Line
+	7850 -800 7600 -800
+Wire Wire Line
+	7600 -800 7600 -600
+$Comp
+L power:GND #PWR0142
+U 1 1 5DF5F56B
+P 7600 -600
+F 0 "#PWR0142" H 7600 -850 50  0001 C CNN
+F 1 "GND" H 7605 -773 50  0000 C CNN
+F 2 "" H 7600 -600 50  0001 C CNN
+F 3 "" H 7600 -600 50  0001 C CNN
+	1    7600 -600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0143
+U 1 1 5DF975F8
+P 10050 1400
+F 0 "#PWR0143" H 10050 1250 50  0001 C CNN
+F 1 "+3V3" V 10050 1600 50  0000 C CNN
+F 2 "" H 10050 1400 50  0001 C CNN
+F 3 "" H 10050 1400 50  0001 C CNN
+	1    10050 1400
+	0    1    1    0   
+$EndComp
+Connection ~ 10050 1400
+$Comp
+L power:+3V3 #PWR0144
+U 1 1 5DFA15A8
+P 8150 1450
+F 0 "#PWR0144" H 8150 1300 50  0001 C CNN
+F 1 "+3V3" V 8150 1650 50  0000 C CNN
+F 2 "" H 8150 1450 50  0001 C CNN
+F 3 "" H 8150 1450 50  0001 C CNN
+	1    8150 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 8150 1450
+$Comp
+L power:+3V3 #PWR0145
+U 1 1 5DFA3E75
+P 6900 1300
+F 0 "#PWR0145" H 6900 1150 50  0001 C CNN
+F 1 "+3V3" H 6915 1473 50  0000 C CNN
+F 2 "" H 6900 1300 50  0001 C CNN
+F 3 "" H 6900 1300 50  0001 C CNN
+	1    6900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1300 6900 1450
+$Comp
+L power:+3V3 #PWR0146
+U 1 1 5DFAD179
+P 8800 1300
+F 0 "#PWR0146" H 8800 1150 50  0001 C CNN
+F 1 "+3V3" H 8815 1473 50  0000 C CNN
+F 2 "" H 8800 1300 50  0001 C CNN
+F 3 "" H 8800 1300 50  0001 C CNN
+	1    8800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1300 8800 1400
 $EndSCHEMATC
