@@ -205,12 +205,6 @@ Text Notes 6200 5200 0    50   ~ 0
 3.3V OUTPUT\nVSEL1=1\nVSEL2=1\nVSEL3=1
 Wire Wire Line
 	6950 5500 7100 5500
-Text GLabel 4550 6300 2    50   BiDi ~ 0
-PA21
-Text GLabel 4550 6500 2    50   BiDi ~ 0
-PA22
-Text GLabel 4550 6600 2    50   BiDi ~ 0
-PA23
 Wire Wire Line
 	1450 5600 1350 5600
 Wire Wire Line
@@ -607,10 +601,6 @@ Wire Wire Line
 	1350 5400 1450 5400
 Text GLabel 4600 4500 2    50   BiDi ~ 0
 DAC1
-Text GLabel 4600 4400 2    50   BiDi ~ 0
-PA04
-Text GLabel 4600 4700 2    50   BiDi ~ 0
-PA07
 $Comp
 L mainboard-rescue:Conn_01x01-Connector_Generic J28
 U 1 1 5D2A6718
@@ -1357,12 +1347,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 6700 4450 6700
 Wire Wire Line
-	4450 6600 4550 6600
-Wire Wire Line
-	4450 6500 4550 6500
-Wire Wire Line
-	4450 6300 4550 6300
-Wire Wire Line
 	4450 5800 5250 5800
 Wire Wire Line
 	4450 5300 4550 5300
@@ -1373,11 +1357,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 4900 4450 4900
 Wire Wire Line
-	4450 4700 4600 4700
-Wire Wire Line
 	4450 4500 4600 4500
-Wire Wire Line
-	4450 4400 4600 4400
 Wire Wire Line
 	4450 4300 5150 4300
 Wire Wire Line
@@ -1609,10 +1589,10 @@ Wire Wire Line
 	750  6950 600  6950
 Connection ~ 750  6950
 $Comp
-L symbols:U.FL-R-SMT-1 J?
+L symbols:U.FL-R-SMT-1 J6
 U 1 1 5DBA79E5
 P 9450 5150
-F 0 "J?" H 9850 5415 50  0000 C CNN
+F 0 "J6" H 9850 5415 50  0000 C CNN
 F 1 "U.FL-R-SMT-1" H 9850 5324 50  0000 C CNN
 F 2 "custom-footprints:U.FL-R-SMT-1" H 10100 5250 50  0001 L CNN
 F 3 "https://www.hirose.co.jp/cataloge_hp/ed_UFL_20141014.pdf" H 10100 5150 50  0001 L CNN
@@ -1630,10 +1610,10 @@ $EndComp
 Wire Wire Line
 	9050 5150 8850 5150
 $Comp
-L symbols:U.FL-R-SMT-1 J?
+L symbols:U.FL-R-SMT-1 J7
 U 1 1 5DBBD914
 P 10400 3900
-F 0 "J?" H 10800 4165 50  0000 C CNN
+F 0 "J7" H 10800 4165 50  0000 C CNN
 F 1 "U.FL-R-SMT-1" H 10800 4074 50  0000 C CNN
 F 2 "custom-footprints:U.FL-R-SMT-1" H 11050 4000 50  0001 L CNN
 F 3 "https://www.hirose.co.jp/cataloge_hp/ed_UFL_20141014.pdf" H 11050 3900 50  0001 L CNN
@@ -1651,10 +1631,10 @@ $EndComp
 Wire Wire Line
 	10000 3900 9900 3900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0136
 U 1 1 5DBC73C0
 P 9550 5450
-F 0 "#PWR?" H 9550 5200 50  0001 C CNN
+F 0 "#PWR0136" H 9550 5200 50  0001 C CNN
 F 1 "GND" H 9555 5277 50  0000 C CNN
 F 2 "" H 9550 5450 50  0001 C CNN
 F 3 "" H 9550 5450 50  0001 C CNN
@@ -1662,14 +1642,30 @@ F 3 "" H 9550 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0137
 U 1 1 5DBC75A7
 P 10500 4200
-F 0 "#PWR?" H 10500 3950 50  0001 C CNN
+F 0 "#PWR0137" H 10500 3950 50  0001 C CNN
 F 1 "GND" H 10505 4027 50  0000 C CNN
 F 2 "" H 10500 4200 50  0001 C CNN
 F 3 "" H 10500 4200 50  0001 C CNN
 	1    10500 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L mainboard-rescue:Conn_01x01-Connector_Generic J?
+U 1 1 5DC2AE71
+P 4700 7550
+F 0 "J?" V 4800 7450 50  0000 L CNN
+F 1 "Conn_01x01" V 4663 7630 50  0001 L CNN
+F 2 "custom-footprints:castellated_small_1side" H 4700 7550 50  0001 C CNN
+F 3 "~" H 4700 7550 50  0001 C CNN
+F 4 "DNP" H -300 0   50  0001 C CNN "DNP"
+	1    4700 7550
+	0    1    1    0   
+$EndComp
+Text GLabel 4650 7350 0    50   BiDi ~ 0
+~RESET
+Wire Wire Line
+	4650 7350 4700 7350
 $EndSCHEMATC
