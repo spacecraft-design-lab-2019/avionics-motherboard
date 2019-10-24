@@ -1403,7 +1403,7 @@ F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/706678
 $EndComp
 Text GLabel 5050 2950 0    50   Input ~ 0
 BATT_P
-Text GLabel 1450 6000 0    59   BiDi ~ 0
+Text GLabel 1450 6100 0    59   BiDi ~ 0
 WDT_WDI
 Text GLabel 7500 750  0    50   Input ~ 0
 BATT_P
@@ -1590,13 +1590,13 @@ Text GLabel 8800 4200 0    50   BiDi ~ 0
 RF2_CS
 Wire Wire Line
 	8800 4200 8900 4200
-Text GLabel -2050 6100 2    50   BiDi ~ 0
+Text GLabel 1450 5500 0    50   BiDi ~ 0
 RF2_CS
 Text GLabel -1550 6300 2    50   BiDi ~ 0
 RF2_IO1
 Text GLabel -2050 6200 2    50   BiDi ~ 0
 RF2_RST
-Text GLabel -2050 6300 2    50   BiDi ~ 0
+Text GLabel 4450 6900 2    50   BiDi ~ 0
 RF2_BUSY
 Text GLabel 10000 4500 2    50   BiDi ~ 0
 RF2_IO1
@@ -1707,4 +1707,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 1450 4750 1450
 Connection ~ 4750 1450
+Text GLabel 1450 5400 0    50   Input ~ 0
+CS_SD
 $EndSCHEMATC
