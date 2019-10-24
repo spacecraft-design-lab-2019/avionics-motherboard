@@ -51,30 +51,6 @@ F 3 "" H 5450 6500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L mainboard-rescue:R_US-Device R1
-U 1 1 5C3B885A
-P -250 6000
-F 0 "R1" H -350 5950 50  0000 C CNN
-F 1 "330" H -400 6050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V -210 5990 50  0001 C CNN
-F 3 "~" H -250 6000 50  0001 C CNN
-	1    -250 6000
-	-1   0    0    1   
-$EndComp
-$Comp
-L mainboard-rescue:LED0805_NOOUTLINE- D?
-U 1 1 5C3B8860
-P -450 6150
-AR Path="/5BCFDB7D/5C3B8860" Ref="D?"  Part="1" 
-AR Path="/5C3B8860" Ref="D1"  Part="1" 
-F 0 "D1" H -500 6050 42  0000 C CNN
-F 1 "GREEN" H -600 6350 42  0001 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H -450 6150 50  0001 C CNN
-F 3 "" H -450 6150 50  0001 C CNN
-	1    -450 6150
-	-1   0    0    1   
-$EndComp
-$Comp
 L mainboard-rescue:R_US-Device R5
 U 1 1 5C6310F9
 P 5150 7200
@@ -341,16 +317,14 @@ $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 5DB132FE
-P -600 6150
-F 0 "#PWR0121" H -600 5900 50  0001 C CNN
-F 1 "GND" H -595 5977 50  0000 C CNN
-F 2 "" H -600 6150 50  0001 C CNN
-F 3 "" H -600 6150 50  0001 C CNN
-	1    -600 6150
+P 650 6300
+F 0 "#PWR0121" H 650 6050 50  0001 C CNN
+F 1 "GND" H 655 6127 50  0000 C CNN
+F 2 "" H 650 6300 50  0001 C CNN
+F 3 "" H 650 6300 50  0001 C CNN
+	1    650  6300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	-600 6150 -550 6150
 $Comp
 L power:GND #PWR0122
 U 1 1 5DB1BADE
@@ -625,22 +599,6 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 2050 2500 50  
 	1    2050 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 2600 1600 2    59   Output ~ 0
-MOSI
-Text GLabel 2600 1500 2    59   Output ~ 0
-SCK
-Wire Wire Line
-	2600 1600 2500 1600
-Wire Wire Line
-	2600 1500 2500 1500
-Text GLabel 1200 1000 0    59   Input ~ 0
-MISO
-Wire Wire Line
-	1200 1000 1300 1000
-Wire Wire Line
-	2500 1400 2600 1400
-Text GLabel 2600 1400 2    50   Input ~ 0
-CS_IMU
 $Comp
 L power:GND #PWR0104
 U 1 1 5DAE058A
@@ -661,16 +619,16 @@ NoConn ~ 1300 1300
 $Comp
 L power:+3V3 #PWR0105
 U 1 1 5DB0AC45
-P 2500 850
-F 0 "#PWR0105" H 2500 700 50  0001 C CNN
-F 1 "+3V3" H 2515 1023 50  0000 C CNN
-F 2 "" H 2500 850 50  0001 C CNN
-F 3 "" H 2500 850 50  0001 C CNN
-	1    2500 850 
+P 2600 850
+F 0 "#PWR0105" H 2600 700 50  0001 C CNN
+F 1 "+3V3" H 2615 1023 50  0000 C CNN
+F 2 "" H 2600 850 50  0001 C CNN
+F 3 "" H 2600 850 50  0001 C CNN
+	1    2600 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 850  2500 1000
+	2600 850  2600 1000
 $Comp
 L power:+3V3 #PWR0106
 U 1 1 5DB1015E
@@ -936,8 +894,7 @@ F 3 "~" H 2700 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 1000 2500 1000
-Connection ~ 2500 1000
+	2700 1000 2600 1000
 $Comp
 L power:GND #PWR02
 U 1 1 5DAFBD93
@@ -1570,8 +1527,6 @@ Text GLabel 8950 5750 2    50   BiDi ~ 0
 RF1_IO1
 Wire Wire Line
 	8950 5750 8850 5750
-Text GLabel -1100 4850 2    50   Output ~ 0
-CS_IMU
 $Comp
 L power:GND #PWR0129
 U 1 1 5DCE9737
@@ -1741,6 +1696,42 @@ F 1 "ATSAMD51G_TQFN48" H 1850 8000 59  0001 L BNN
 F 2 "ATSAMD51G19A-MU:QFN50P700X700X90-49N-D" H 2950 5900 50  0001 C CNN
 F 3 "" H 2950 5900 50  0001 C CNN
 	1    2950 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 1600 2    59   BiDi ~ 0
+SDA1
+Text GLabel 2500 1500 2    59   BiDi ~ 0
+SCL1
+Wire Wire Line
+	2500 1400 2600 1400
+Wire Wire Line
+	2600 1400 2600 1000
+Connection ~ 2600 1000
+Wire Wire Line
+	2600 1000 2500 1000
+NoConn ~ 1300 1000
+$Comp
+L LED:WS2812B D3
+U 1 1 5DD8FF29
+P 650 6000
+F 0 "D3" H 306 6046 50  0000 R CNN
+F 1 "WS2812B" H 850 6400 50  0000 R CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 700 5700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 750 5625 50  0001 L TNN
+	1    650  6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	950  6000 1450 6000
+$Comp
+L power:+3V3 #PWR0138
+U 1 1 5DDA79DB
+P 650 5700
+F 0 "#PWR0138" H 650 5550 50  0001 C CNN
+F 1 "+3V3" H 665 5873 50  0000 C CNN
+F 2 "" H 650 5700 50  0001 C CNN
+F 3 "" H 650 5700 50  0001 C CNN
+	1    650  5700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
