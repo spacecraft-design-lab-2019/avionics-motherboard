@@ -1268,7 +1268,7 @@ Text GLabel 5950 3150 2    50   Input ~ 0
 CS_CAM
 Text GLabel 5950 3050 2    50   Input ~ 0
 BATT_N
-Text GLabel 4550 5700 2    50   Input ~ 0
+Text GLabel -1100 4600 2    50   Input ~ 0
 CS_CAM
 Connection ~ 1450 7000
 Wire Wire Line
@@ -1311,7 +1311,7 @@ F 3 "" H 2950 5900 50  0001 C CNN
 	1    2950 5900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 6200 2    50   Input ~ 0
+Text GLabel -1050 4400 2    50   Input ~ 0
 EN_CAM
 Text GLabel 5300 5800 2    59   BiDi ~ 0
 SCL2
@@ -1353,8 +1353,6 @@ Text GLabel 4700 4000 2    59   BiDi ~ 0
 SDA1
 Text GLabel 4700 4100 2    59   BiDi ~ 0
 SCL1
-Wire Wire Line
-	4550 5700 4450 5700
 Text Notes 1650 7550 0    50   ~ 0
 UART:\nTX: PB08\nRX: PB09\n
 Text Notes 2100 7650 0    50   ~ 0
@@ -1365,12 +1363,10 @@ Text GLabel 6100 1950 2    59   BiDi ~ 0
 SDA1
 Text GLabel 5200 1950 0    59   BiDi ~ 0
 SCL1
-Text GLabel 5200 1250 0    59   BiDi ~ 0
-SCL2
 Text GLabel 6100 1250 2    59   BiDi ~ 0
+SCL2
+Text GLabel 5200 1250 0    59   BiDi ~ 0
 SDA2
-Wire Wire Line
-	4550 6200 4450 6200
 $Comp
 L mainboard-rescue:R_US-Device R4
 U 1 1 5DB0C8A9
@@ -1464,8 +1460,6 @@ Wire Wire Line
 Connection ~ 5250 5800
 Wire Wire Line
 	5250 5800 5300 5800
-Text GLabel 4450 6000 2    50   Output ~ 0
-CS_IMU
 $Comp
 L mainboard-rescue:XF2M-1015-1A-symbols J5
 U 1 1 5DAE07E7
@@ -1616,9 +1610,9 @@ Text GLabel -1250 5200 0    50   Input ~ 0
 DY_FAULT
 Text GLabel -1250 5300 0    50   Input ~ 0
 MY_EN
-Text GLabel -1250 5500 0    50   Input ~ 0
+Text GLabel -1800 4850 2    50   Input ~ 0
 MINY_1
-Text GLabel -1250 5600 0    50   Input ~ 0
+Text GLabel -1800 4950 2    50   Input ~ 0
 MINY_2
 $Comp
 L Mechanical:Fiducial FID1
@@ -1698,4 +1692,6 @@ Text GLabel 8950 5750 2    50   BiDi ~ 0
 RF1_IO1
 Wire Wire Line
 	8950 5750 8850 5750
+Text GLabel -1100 4850 2    50   Output ~ 0
+CS_IMU
 $EndSCHEMATC
