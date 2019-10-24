@@ -1170,10 +1170,8 @@ Text Notes 2100 7650 0    50   ~ 0
 SPI\nSCK: PA09\nMOSI: PA08\nMISO: PA10\n
 Text Notes 2600 7900 0    50   ~ 0
 I2C_1\nSCL: PA01\nSDA: PA00\n\nI2C_2\nSCL: PA16\nSDA: PA17\n
-Text GLabel 5750 -2200 2    59   BiDi ~ 0
+Text GLabel 4850 -2200 0    59   BiDi ~ 0
 SDA1
-Text GLabel 4850 -2600 0    59   BiDi ~ 0
-SCL2
 $Comp
 L mainboard-rescue:R_US-Device R4
 U 1 1 5DB0C8A9
@@ -1826,9 +1824,7 @@ F 3 "" H 5750 -2000 50  0001 C CNN
 	1    5750 -2000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5750 -2600 2    59   BiDi ~ 0
-SDA2
-Text GLabel 5750 -2300 2    50   Input ~ 0
+Text GLabel 4850 -2300 0    50   Input ~ 0
 BURN1
 $Comp
 L symbols:xf2m-2415-1a J4
@@ -1951,10 +1947,25 @@ Text Label 5800 -2500 0    50   ~ 0
 MOY_1
 Text Label 5800 -2400 0    50   ~ 0
 MOY_2
-Text GLabel 4850 -2300 0    50   Input ~ 0
+Text GLabel 5750 -2300 2    50   Input ~ 0
 BURN2
-Text GLabel 4850 -2200 0    59   BiDi ~ 0
+Text GLabel 5750 -2200 2    59   BiDi ~ 0
 SCL1
 Text GLabel 4850 -2100 0    50   Output ~ 0
 BATT_STATUS
+Text GLabel 5750 -2600 2    59   BiDi ~ 0
+SDA2
+Text GLabel 4850 -2600 0    59   BiDi ~ 0
+SCL2
+$Comp
+L power:+3V3 #PWR0142
+U 1 1 5E14579C
+P 5750 -2100
+F 0 "#PWR0142" H 5750 -2250 50  0001 C CNN
+F 1 "+3V3" V 5750 -1850 50  0000 C CNN
+F 2 "" H 5750 -2100 50  0001 C CNN
+F 3 "" H 5750 -2100 50  0001 C CNN
+	1    5750 -2100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

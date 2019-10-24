@@ -902,7 +902,7 @@ Text Notes 3500 700  0    79   ~ 0
 WATCH-DOG TIMER
 Text Notes 1800 650  0    79   ~ 0
 IMU
-Text Notes 5250 -3300 0    79   ~ 0
+Text Notes 6050 2650 0    79   ~ 0
 FLAT FLEX CONN
 $Comp
 L power:GND #PWR0139
@@ -1103,19 +1103,19 @@ Text GLabel 10000 1600 2    50   Input ~ 0
 MOY_1
 Text GLabel 10000 1700 2    50   Input ~ 0
 MOY_2
-Text GLabel 5950 3250 2    50   Output ~ 0
+Text GLabel 6300 1050 2    50   Output ~ 0
 MOSI
-Text GLabel 5050 3250 0    50   Input ~ 0
+Text GLabel 5400 1050 0    50   Input ~ 0
 MISO
-Text GLabel 5050 3350 0    50   Input ~ 0
+Text GLabel 5400 1150 0    50   Input ~ 0
 SCK
-Text GLabel 5050 3150 0    50   Input ~ 0
+Text GLabel 5400 950  0    50   Input ~ 0
 EN_CAM
-Text GLabel 5950 2950 2    50   Input ~ 0
+Text GLabel 6300 750  2    50   Input ~ 0
 GND
-Text GLabel 5950 3150 2    50   Input ~ 0
+Text GLabel 6300 950  2    50   Input ~ 0
 CS_CAM
-Text GLabel 5950 3050 2    50   Input ~ 0
+Text GLabel 6300 850  2    50   Input ~ 0
 BATT_N
 Text GLabel 1450 5800 0    50   Output ~ 0
 CS_CAM
@@ -1170,7 +1170,7 @@ Text Notes 2100 7650 0    50   ~ 0
 SPI\nSCK: PA09\nMOSI: PA08\nMISO: PA10\n
 Text Notes 2600 7900 0    50   ~ 0
 I2C_1\nSCL: PA01\nSDA: PA00\n\nI2C_2\nSCL: PA16\nSDA: PA17\n
-Text GLabel 4850 -2200 0    59   BiDi ~ 0
+Text GLabel 6100 3350 0    59   BiDi ~ 0
 SDA1
 $Comp
 L mainboard-rescue:R_US-Device R4
@@ -1268,25 +1268,25 @@ Wire Wire Line
 $Comp
 L mainboard-rescue:XF2M-1015-1A-symbols J5
 U 1 1 5DAE07E7
-P 5050 2950
-F 0 "J5" H 5500 3215 50  0000 C CNN
-F 1 "XF2M-1015-1A" H 5500 3124 50  0000 C CNN
-F 2 "custom-footprints:XF2M-1015-1A" H 5800 3050 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" H 5800 2950 50  0001 L CNN
-F 4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" H 5800 2850 50  0001 L CNN "Description"
-F 5 "" H 5800 2750 50  0001 L CNN "Height"
-F 6 "Omron Electronics" H 5800 2650 50  0001 L CNN "Manufacturer_Name"
-F 7 "XF2M-1015-1A" H 5800 2550 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "653-XF2M-1015-1A" H 5800 2450 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" H 5800 2350 50  0001 L CNN "Mouser Price/Stock"
-F 10 "7315772P" H 5800 2250 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/7315772P" H 5800 2150 50  0001 L CNN "RS Price/Stock"
-F 12 "70667825" H 5800 2050 50  0001 L CNN "Allied_Number"
-F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" H 5800 1950 50  0001 L CNN "Allied Price/Stock"
-	1    5050 2950
+P 5400 750
+F 0 "J5" H 5850 1015 50  0000 C CNN
+F 1 "XF2M-1015-1A" H 5850 924 50  0000 C CNN
+F 2 "custom-footprints:XF2M-1015-1A" H 6150 850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" H 6150 750 50  0001 L CNN
+F 4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" H 6150 650 50  0001 L CNN "Description"
+F 5 "" H 6150 550 50  0001 L CNN "Height"
+F 6 "Omron Electronics" H 6150 450 50  0001 L CNN "Manufacturer_Name"
+F 7 "XF2M-1015-1A" H 6150 350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "653-XF2M-1015-1A" H 6150 250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" H 6150 150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7315772P" H 6150 50  50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7315772P" H 6150 -50 50  0001 L CNN "RS Price/Stock"
+F 12 "70667825" H 6150 -150 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" H 6150 -250 50  0001 L CNN "Allied Price/Stock"
+	1    5400 750 
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 2950 0    50   Input ~ 0
+Text GLabel 5400 750  0    50   Input ~ 0
 BATT_P
 Text GLabel 1450 6100 0    59   BiDi ~ 0
 WDT_WDI
@@ -1683,34 +1683,34 @@ $EndComp
 $Comp
 L mainboard-rescue:R_US-Device R12
 U 1 1 5DE2535B
-P 4650 -1600
-F 0 "R12" V 4600 -1500 50  0000 C CNN
-F 1 "0" V 4600 -1700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4690 -1610 50  0001 C CNN
-F 3 "~" H 4650 -1600 50  0001 C CNN
-	1    4650 -1600
+P 5900 3950
+F 0 "R12" V 5850 4050 50  0000 C CNN
+F 1 "0" V 5850 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5940 3940 50  0001 C CNN
+F 3 "~" H 5900 3950 50  0001 C CNN
+	1    5900 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L mainboard-rescue:R_US-Device R11
 U 1 1 5DE4E3AF
-P 4650 -1800
-F 0 "R11" V 4600 -1700 50  0000 C CNN
-F 1 "0" V 4600 -1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4690 -1810 50  0001 C CNN
-F 3 "~" H 4650 -1800 50  0001 C CNN
-	1    4650 -1800
+P 5900 3750
+F 0 "R11" V 5850 3850 50  0000 C CNN
+F 1 "0" V 5850 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5940 3740 50  0001 C CNN
+F 3 "~" H 5900 3750 50  0001 C CNN
+	1    5900 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L mainboard-rescue:R_US-Device R1
 U 1 1 5DE5629A
-P 4650 -2400
-F 0 "R1" V 4550 -2300 50  0000 C CNN
-F 1 "0" V 4550 -2450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4690 -2410 50  0001 C CNN
-F 3 "~" H 4650 -2400 50  0001 C CNN
-	1    4650 -2400
+P 5900 3150
+F 0 "R1" V 5800 3250 50  0000 C CNN
+F 1 "0" V 5800 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5940 3140 50  0001 C CNN
+F 3 "~" H 5900 3150 50  0001 C CNN
+	1    5900 3150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1805,167 +1805,167 @@ M_FAULT
 $Comp
 L power:+3V3 #PWR0147
 U 1 1 5E09749D
-P 4850 -2000
-F 0 "#PWR0147" H 4850 -2150 50  0001 C CNN
-F 1 "+3V3" V 4850 -1750 50  0000 C CNN
-F 2 "" H 4850 -2000 50  0001 C CNN
-F 3 "" H 4850 -2000 50  0001 C CNN
-	1    4850 -2000
+P 6100 3550
+F 0 "#PWR0147" H 6100 3400 50  0001 C CNN
+F 1 "+3V3" V 6100 3800 50  0000 C CNN
+F 2 "" H 6100 3550 50  0001 C CNN
+F 3 "" H 6100 3550 50  0001 C CNN
+	1    6100 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0148
 U 1 1 5E0985B1
-P 5750 -2000
-F 0 "#PWR0148" H 5750 -2250 50  0001 C CNN
-F 1 "GND" V 5750 -2200 50  0000 C CNN
-F 2 "" H 5750 -2000 50  0001 C CNN
-F 3 "" H 5750 -2000 50  0001 C CNN
-	1    5750 -2000
+P 7000 3550
+F 0 "#PWR0148" H 7000 3300 50  0001 C CNN
+F 1 "GND" V 7000 3350 50  0000 C CNN
+F 2 "" H 7000 3550 50  0001 C CNN
+F 3 "" H 7000 3550 50  0001 C CNN
+	1    7000 3550
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4850 -2300 0    50   Input ~ 0
+Text GLabel 6100 3250 0    50   Input ~ 0
 BURN1
 $Comp
 L symbols:xf2m-2415-1a J4
 U 1 1 5E0A50DA
-P 4850 -2600
-F 0 "J4" H 5300 -2335 50  0000 C CNN
-F 1 "xf2m-2415-1a" H 5300 -2426 50  0000 C CNN
-F 2 "custom-footprints:XF2M-2415-1A" H 5600 -2500 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/0fd2/0900766b80fd28a0.pdf" H 5600 -2600 50  0001 L CNN
-F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Connector Locking Mechanism, Gold Plated Contacts" H 5600 -2700 50  0001 L CNN "Description"
-	1    4850 -2600
+P 6100 2950
+F 0 "J4" H 6550 3215 50  0000 C CNN
+F 1 "xf2m-2415-1a" H 6550 3124 50  0000 C CNN
+F 2 "custom-footprints:XF2M-2415-1A" H 6850 3050 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0fd2/0900766b80fd28a0.pdf" H 6850 2950 50  0001 L CNN
+F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Connector Locking Mechanism, Gold Plated Contacts" H 6850 2850 50  0001 L CNN "Description"
+	1    6100 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 -1600 4850 -1600
-Text Notes 4400 -1550 2    50   ~ 0
+	6050 3950 6100 3950
+Text Notes 5650 4000 2    50   ~ 0
 COIL1_N
-Text Notes 4400 -1750 2    50   ~ 0
+Text Notes 5650 3800 2    50   ~ 0
 COIL3_N
-Text Notes 4400 -1650 2    50   ~ 0
+Text Notes 5650 3900 2    50   ~ 0
 COIL2_P
-Text Notes 4400 -1850 2    50   ~ 0
+Text Notes 5650 3700 2    50   ~ 0
 COIL4_P
 Wire Wire Line
-	4500 -1700 4500 -1600
+	5750 3850 5750 3950
 Wire Wire Line
-	4500 -1700 4850 -1700
+	5750 3850 6100 3850
 Wire Wire Line
-	4800 -1800 4850 -1800
+	6050 3750 6100 3750
 Wire Wire Line
-	4500 -1900 4500 -1800
+	5750 3650 5750 3750
 Wire Wire Line
-	4500 -1900 4850 -1900
+	5750 3650 6100 3650
 Wire Wire Line
-	4850 -1500 4600 -1500
+	6100 4050 5850 4050
 Wire Wire Line
-	4600 -1500 4600 -1300
+	5850 4050 5850 4100
 $Comp
 L power:GND #PWR0149
 U 1 1 5E0AA173
-P 4600 -1300
-F 0 "#PWR0149" H 4600 -1550 50  0001 C CNN
-F 1 "GND" H 4605 -1473 50  0000 C CNN
-F 2 "" H 4600 -1300 50  0001 C CNN
-F 3 "" H 4600 -1300 50  0001 C CNN
-	1    4600 -1300
+P 5850 4100
+F 0 "#PWR0149" H 5850 3850 50  0001 C CNN
+F 1 "GND" H 5855 3927 50  0000 C CNN
+F 2 "" H 5850 4100 50  0001 C CNN
+F 3 "" H 5850 4100 50  0001 C CNN
+	1    5850 4100
 	1    0    0    -1  
 $EndComp
-Text GLabel 6150 -1500 2    50   Input ~ 0
+Text GLabel 7400 4050 2    50   Input ~ 0
 BATT_P
-Text GLabel 6150 -1600 2    50   Input ~ 0
+Text GLabel 7400 3950 2    50   Input ~ 0
 COIL1_P
-Text GLabel 6150 -1800 2    50   Input ~ 0
+Text GLabel 7400 3750 2    50   Input ~ 0
 COIL3_P
-Text GLabel 6150 -1900 2    50   Input ~ 0
+Text GLabel 7400 3650 2    50   Input ~ 0
 COIL4_N
 Wire Wire Line
-	5750 -1600 6150 -1600
-Text GLabel 6150 -1700 2    50   Input ~ 0
+	7000 3950 7400 3950
+Text GLabel 7400 3850 2    50   Input ~ 0
 COIL2_N
 Wire Wire Line
-	6150 -1700 5750 -1700
+	7400 3850 7000 3850
 Wire Wire Line
-	5750 -1800 6150 -1800
+	7000 3750 7400 3750
 Wire Wire Line
-	6150 -1900 5750 -1900
+	7400 3650 7000 3650
 Wire Notes Line
-	6550 -1700 6600 -1700
+	7800 3850 7850 3850
 Wire Notes Line
-	6600 -1700 6600 -1600
+	7850 3850 7850 3950
 Wire Notes Line
-	6600 -1600 6550 -1600
+	7850 3950 7800 3950
 Wire Notes Line
-	6550 -1900 6600 -1900
+	7800 3650 7850 3650
 Wire Notes Line
-	6600 -1900 6600 -1800
+	7850 3650 7850 3750
 Wire Notes Line
-	6600 -1800 6550 -1800
-Text Notes 6700 -1800 2    50   ~ 0
+	7850 3750 7800 3750
+Text Notes 7950 3750 2    50   ~ 0
 Z
-Text Notes 6700 -1600 2    50   ~ 0
+Text Notes 7950 3950 2    50   ~ 0
 X
 Wire Wire Line
-	6150 -1500 5750 -1500
-Text Label 5800 -1600 0    50   ~ 0
+	7400 4050 7000 4050
+Text Label 7050 3950 0    50   ~ 0
 MOZ_1
-Text Label 5800 -1700 0    50   ~ 0
+Text Label 7050 3850 0    50   ~ 0
 MOZ_2
-Text Label 5800 -1900 0    50   ~ 0
+Text Label 7050 3650 0    50   ~ 0
 MOX_1
-Text Label 5800 -1800 0    50   ~ 0
+Text Label 7050 3750 0    50   ~ 0
 MOX_2
-Text Notes 4400 -2350 2    50   ~ 0
+Text Notes 5650 3200 2    50   ~ 0
 COIL5_N
-Text Notes 4400 -2450 2    50   ~ 0
+Text Notes 5650 3100 2    50   ~ 0
 COIL6_P
 Wire Wire Line
-	4800 -2400 4850 -2400
+	6050 3150 6100 3150
 Wire Wire Line
-	4500 -2500 4500 -2400
+	5750 3050 5750 3150
 Wire Wire Line
-	4500 -2500 4850 -2500
-Text GLabel 6150 -2400 2    50   Input ~ 0
+	5750 3050 6100 3050
+Text GLabel 7400 3150 2    50   Input ~ 0
 COIL5_P
 Wire Wire Line
-	5750 -2400 6150 -2400
-Text GLabel 6150 -2500 2    50   Input ~ 0
+	7000 3150 7400 3150
+Text GLabel 7400 3050 2    50   Input ~ 0
 COIL6_N
 Wire Wire Line
-	6150 -2500 5750 -2500
+	7400 3050 7000 3050
 Wire Notes Line
-	6550 -2500 6600 -2500
+	7800 3050 7850 3050
 Wire Notes Line
-	6600 -2500 6600 -2400
+	7850 3050 7850 3150
 Wire Notes Line
-	6600 -2400 6550 -2400
-Text Notes 6700 -2400 2    50   ~ 0
+	7850 3150 7800 3150
+Text Notes 7950 3150 2    50   ~ 0
 Y
-Text Label 5800 -2500 0    50   ~ 0
+Text Label 7050 3050 0    50   ~ 0
 MOY_1
-Text Label 5800 -2400 0    50   ~ 0
+Text Label 7050 3150 0    50   ~ 0
 MOY_2
-Text GLabel 5750 -2300 2    50   Input ~ 0
+Text GLabel 7000 3250 2    50   Input ~ 0
 BURN2
-Text GLabel 5750 -2200 2    59   BiDi ~ 0
+Text GLabel 7000 3350 2    59   BiDi ~ 0
 SCL1
-Text GLabel 4850 -2100 0    50   Output ~ 0
+Text GLabel 6100 3450 0    50   Output ~ 0
 BATT_STATUS
-Text GLabel 5750 -2600 2    59   BiDi ~ 0
+Text GLabel 7000 2950 2    59   BiDi ~ 0
 SDA2
-Text GLabel 4850 -2600 0    59   BiDi ~ 0
+Text GLabel 6100 2950 0    59   BiDi ~ 0
 SCL2
 $Comp
 L power:+3V3 #PWR0142
 U 1 1 5E14579C
-P 5750 -2100
-F 0 "#PWR0142" H 5750 -2250 50  0001 C CNN
-F 1 "+3V3" V 5750 -1850 50  0000 C CNN
-F 2 "" H 5750 -2100 50  0001 C CNN
-F 3 "" H 5750 -2100 50  0001 C CNN
-	1    5750 -2100
+P 7000 3450
+F 0 "#PWR0142" H 7000 3300 50  0001 C CNN
+F 1 "+3V3" V 7000 3700 50  0000 C CNN
+F 2 "" H 7000 3450 50  0001 C CNN
+F 3 "" H 7000 3450 50  0001 C CNN
+	1    7000 3450
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC
