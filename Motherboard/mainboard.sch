@@ -607,7 +607,7 @@ U 1 1 5D2A6718
 P 5000 7550
 F 0 "J28" V 5100 7450 50  0000 L CNN
 F 1 "Conn_01x01" V 4963 7630 50  0001 L CNN
-F 2 "custom-footprints:castellated_small_1side" H 5000 7550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5000 7550 50  0001 C CNN
 F 3 "~" H 5000 7550 50  0001 C CNN
 F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
 	1    5000 7550
@@ -619,7 +619,7 @@ U 1 1 5D2B62DF
 P 4900 7550
 F 0 "J1" V 5000 7500 50  0000 L CNN
 F 1 "Conn_01x01" V 4863 7630 50  0001 L CNN
-F 2 "custom-footprints:castellated_small_1side" H 4900 7550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4900 7550 50  0001 C CNN
 F 3 "~" H 4900 7550 50  0001 C CNN
 F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
 	1    4900 7550
@@ -631,7 +631,7 @@ U 1 1 5D32C3EB
 P 4800 7550
 F 0 "J29" V 4900 7450 50  0000 L CNN
 F 1 "Conn_01x01" V 4763 7630 50  0001 L CNN
-F 2 "custom-footprints:castellated_small_1side" H 4800 7550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4800 7550 50  0001 C CNN
 F 3 "~" H 4800 7550 50  0001 C CNN
 F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
 	1    4800 7550
@@ -643,7 +643,7 @@ U 1 1 5D338152
 P 5100 7550
 F 0 "J30" V 5200 7500 50  0000 L CNN
 F 1 "Conn_01x01" V 5063 7630 50  0001 L CNN
-F 2 "custom-footprints:castellated_small_1side" H 5100 7550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5100 7550 50  0001 C CNN
 F 3 "~" H 5100 7550 50  0001 C CNN
 F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
 	1    5100 7550
@@ -1653,12 +1653,12 @@ F 3 "" H 10500 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mainboard-rescue:Conn_01x01-Connector_Generic J?
+L mainboard-rescue:Conn_01x01-Connector_Generic J8
 U 1 1 5DC2AE71
 P 4700 7550
-F 0 "J?" V 4800 7450 50  0000 L CNN
+F 0 "J8" V 4800 7450 50  0000 L CNN
 F 1 "Conn_01x01" V 4663 7630 50  0001 L CNN
-F 2 "custom-footprints:castellated_small_1side" H 4700 7550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4700 7550 50  0001 C CNN
 F 3 "~" H 4700 7550 50  0001 C CNN
 F 4 "DNP" H -300 0   50  0001 C CNN "DNP"
 	1    4700 7550
