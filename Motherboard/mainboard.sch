@@ -64,7 +64,7 @@ $EndComp
 Wire Wire Line
 	5300 7100 5300 7200
 Wire Wire Line
-	4900 7200 4900 7350
+	4900 7200 4900 7500
 $Comp
 L mainboard-rescue:CAP_CERAMIC0603_NO- C?
 U 1 1 5C6B8698
@@ -179,8 +179,6 @@ Wire Wire Line
 	6950 5500 7100 5500
 Connection ~ 5000 7200
 Wire Wire Line
-	5000 7200 5000 7350
-Wire Wire Line
 	5350 4550 5350 4750
 Wire Wire Line
 	5350 4750 5400 4750
@@ -240,12 +238,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0116
 U 1 1 5D84CDF6
-P 4800 7350
-F 0 "#PWR0116" H 4800 7200 50  0001 C CNN
-F 1 "+3V3" H 4815 7523 50  0000 C CNN
-F 2 "" H 4800 7350 50  0001 C CNN
-F 3 "" H 4800 7350 50  0001 C CNN
-	1    4800 7350
+P 4600 7400
+F 0 "#PWR0116" H 4600 7250 50  0001 C CNN
+F 1 "+3V3" H 4750 7450 50  0000 C CNN
+F 2 "" H 4600 7400 50  0001 C CNN
+F 3 "" H 4600 7400 50  0001 C CNN
+	1    4600 7400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -519,54 +517,6 @@ Wire Wire Line
 	8950 5450 8850 5450
 Text GLabel 4600 4500 2    50   Input ~ 0
 BATTERY
-$Comp
-L mainboard-rescue:Conn_01x01-Connector_Generic J28
-U 1 1 5D2A6718
-P 5000 7550
-F 0 "J28" V 5100 7450 50  0000 L CNN
-F 1 "Conn_01x01" V 4963 7630 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5000 7550 50  0001 C CNN
-F 3 "~" H 5000 7550 50  0001 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
-	1    5000 7550
-	0    1    1    0   
-$EndComp
-$Comp
-L mainboard-rescue:Conn_01x01-Connector_Generic J1
-U 1 1 5D2B62DF
-P 4900 7550
-F 0 "J1" V 5000 7500 50  0000 L CNN
-F 1 "Conn_01x01" V 4863 7630 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4900 7550 50  0001 C CNN
-F 3 "~" H 4900 7550 50  0001 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
-	1    4900 7550
-	0    1    1    0   
-$EndComp
-$Comp
-L mainboard-rescue:Conn_01x01-Connector_Generic J29
-U 1 1 5D32C3EB
-P 4800 7550
-F 0 "J29" V 4900 7450 50  0000 L CNN
-F 1 "Conn_01x01" V 4763 7630 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4800 7550 50  0001 C CNN
-F 3 "~" H 4800 7550 50  0001 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
-	1    4800 7550
-	0    1    1    0   
-$EndComp
-$Comp
-L mainboard-rescue:Conn_01x01-Connector_Generic J30
-U 1 1 5D338152
-P 5100 7550
-F 0 "J30" V 5200 7500 50  0000 L CNN
-F 1 "Conn_01x01" V 5063 7630 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5100 7550 50  0001 C CNN
-F 3 "~" H 5100 7550 50  0001 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "DNP"
-	1    5100 7550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5700 5350 5700 5550
 $Comp
@@ -907,13 +857,13 @@ FLAT FLEX CONN
 $Comp
 L power:GND #PWR0139
 U 1 1 5DB21F1D
-P 5350 7350
-F 0 "#PWR0139" H 5350 7100 50  0001 C CNN
-F 1 "GND" H 5355 7177 50  0000 C CNN
-F 2 "" H 5350 7350 50  0001 C CNN
-F 3 "" H 5350 7350 50  0001 C CNN
-	1    5350 7350
-	1    0    0    -1  
+P 4650 7600
+F 0 "#PWR0139" H 4650 7350 50  0001 C CNN
+F 1 "GND" V 4650 7400 50  0000 C CNN
+F 2 "" H 4650 7600 50  0001 C CNN
+F 3 "" H 4650 7600 50  0001 C CNN
+	1    4650 7600
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0114
@@ -929,10 +879,6 @@ $EndComp
 Wire Wire Line
 	5850 7350 5350 7350
 Connection ~ 5350 7350
-Wire Wire Line
-	5100 7350 5350 7350
-Wire Wire Line
-	5350 7000 5350 7350
 $Comp
 L mainboard-rescue:C-Device C9
 U 1 1 5DB69DAC
@@ -1103,20 +1049,16 @@ Text GLabel 10000 1600 2    50   Input ~ 0
 MOY_1
 Text GLabel 10000 1700 2    50   Input ~ 0
 MOY_2
-Text GLabel 6300 1050 2    50   Output ~ 0
+Text GLabel 5400 950  0    50   Output ~ 0
 MOSI
 Text GLabel 5400 1050 0    50   Input ~ 0
 MISO
-Text GLabel 5400 1150 0    50   Input ~ 0
-SCK
-Text GLabel 5400 950  0    50   Input ~ 0
-EN_CAM
-Text GLabel 6300 750  2    50   Input ~ 0
-GND
 Text GLabel 6300 950  2    50   Input ~ 0
+SCK
+Text GLabel 6300 1050 2    50   Input ~ 0
+EN_CAM
+Text GLabel 5400 1150 0    50   Input ~ 0
 CS_CAM
-Text GLabel 6300 850  2    50   Input ~ 0
-BATT_N
 Text GLabel 1450 5800 0    50   Output ~ 0
 CS_CAM
 Connection ~ 1450 7000
@@ -1375,22 +1317,8 @@ F 3 "" H 10500 4200 50  0001 C CNN
 	1    10500 4200
 	1    0    0    -1  
 $EndComp
-$Comp
-L mainboard-rescue:Conn_01x01-Connector_Generic J8
-U 1 1 5DC2AE71
-P 4700 7550
-F 0 "J8" V 4800 7450 50  0000 L CNN
-F 1 "Conn_01x01" V 4663 7630 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4700 7550 50  0001 C CNN
-F 3 "~" H 4700 7550 50  0001 C CNN
-F 4 "DNP" H -300 0   50  0001 C CNN "DNP"
-	1    4700 7550
-	0    1    1    0   
-$EndComp
-Text GLabel 4650 7350 0    50   BiDi ~ 0
+Text GLabel 4700 7800 2    50   BiDi ~ 0
 ~RESET
-Wire Wire Line
-	4650 7350 4700 7350
 Text GLabel 4450 5600 2    50   Output ~ 0
 MINX_1
 Text GLabel 4450 5300 2    50   Output ~ 0
@@ -1907,8 +1835,6 @@ Text Notes 7950 3750 2    50   ~ 0
 Z
 Text Notes 7950 3950 2    50   ~ 0
 X
-Wire Wire Line
-	7400 4050 7000 4050
 Text Label 7050 3950 0    50   ~ 0
 MOZ_1
 Text Label 7050 3850 0    50   ~ 0
@@ -1967,5 +1893,89 @@ F 2 "" H 7000 3450 50  0001 C CNN
 F 3 "" H 7000 3450 50  0001 C CNN
 	1    7000 3450
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 4050 7400 4050
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5DB310E1
+P 7100 4350
+F 0 "J9" H 7018 4025 50  0000 C CNN
+F 1 "Conn_01x02" H 7018 4116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7100 4350 50  0001 C CNN
+F 3 "~" H 7100 4350 50  0001 C CNN
+	1    7100 4350
+	-1   0    0    1   
+$EndComp
+Text GLabel 7400 4250 2    50   Input ~ 0
+BATT_P
+Wire Wire Line
+	7300 4250 7400 4250
+$Comp
+L power:GND #PWR0150
+U 1 1 5DB3B3E4
+P 7400 4350
+F 0 "#PWR0150" H 7400 4100 50  0001 C CNN
+F 1 "GND" H 7405 4177 50  0000 C CNN
+F 2 "" H 7400 4350 50  0001 C CNN
+F 3 "" H 7400 4350 50  0001 C CNN
+	1    7400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4350 7300 4350
+$Comp
+L power:GND #PWR0151
+U 1 1 5DB658C1
+P 6400 750
+F 0 "#PWR0151" H 6400 500 50  0001 C CNN
+F 1 "GND" H 6550 700 50  0000 C CNN
+F 2 "" H 6400 750 50  0001 C CNN
+F 3 "" H 6400 750 50  0001 C CNN
+	1    6400 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 750  6300 750 
+Wire Wire Line
+	6300 750  6300 850 
+Connection ~ 6300 750 
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5DB917BE
+P 4400 7600
+F 0 "J1" H 4400 7900 50  0000 C CNN
+F 1 "Conn_01x06" V 4500 7600 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD" H 4400 7600 50  0001 C CNN
+F 3 "~" H 4400 7600 50  0001 C CNN
+	1    4400 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7000 5350 7350
+Wire Wire Line
+	4700 7800 4600 7800
+Wire Wire Line
+	5200 7600 5200 7350
+Wire Wire Line
+	5200 7350 5350 7350
+Wire Wire Line
+	4900 7500 4600 7500
+Wire Wire Line
+	4650 7600 4600 7600
+Wire Wire Line
+	5000 7700 4600 7700
+Wire Wire Line
+	5000 7200 5000 7700
+$Comp
+L power:GND #PWR0152
+U 1 1 5DC68C68
+P 5200 7600
+F 0 "#PWR0152" H 5200 7350 50  0001 C CNN
+F 1 "GND" V 5200 7400 50  0000 C CNN
+F 2 "" H 5200 7600 50  0001 C CNN
+F 3 "" H 5200 7600 50  0001 C CNN
+	1    5200 7600
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
