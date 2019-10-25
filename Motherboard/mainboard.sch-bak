@@ -1049,15 +1049,15 @@ Text GLabel 10000 1600 2    50   Input ~ 0
 MOY_1
 Text GLabel 10000 1700 2    50   Input ~ 0
 MOY_2
-Text GLabel 6300 1050 2    50   Output ~ 0
+Text GLabel 5400 950  0    50   Output ~ 0
 MOSI
 Text GLabel 5400 1050 0    50   Input ~ 0
 MISO
-Text GLabel 5400 1150 0    50   Input ~ 0
-SCK
-Text GLabel 5400 950  0    50   Input ~ 0
-EN_CAM
 Text GLabel 6300 950  2    50   Input ~ 0
+SCK
+Text GLabel 6300 1050 2    50   Input ~ 0
+EN_CAM
+Text GLabel 5400 1150 0    50   Input ~ 0
 CS_CAM
 Text GLabel 1450 5800 0    50   Output ~ 0
 CS_CAM
@@ -1967,4 +1967,15 @@ Wire Wire Line
 	5000 7700 4600 7700
 Wire Wire Line
 	5000 7200 5000 7700
+$Comp
+L power:GND #PWR0152
+U 1 1 5DC68C68
+P 5200 7600
+F 0 "#PWR0152" H 5200 7350 50  0001 C CNN
+F 1 "GND" V 5200 7400 50  0000 C CNN
+F 2 "" H 5200 7600 50  0001 C CNN
+F 3 "" H 5200 7600 50  0001 C CNN
+	1    5200 7600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

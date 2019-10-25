@@ -520,10 +520,10 @@ BATTERY
 Wire Wire Line
 	5700 5350 5700 5550
 $Comp
-L mainboard-rescue:BMX160-symbols IC1
+L mainboard-rescue:BMX160-symbols U7
 U 1 1 5DAD1297
 P 1300 1000
-F 0 "IC1" H 1900 1265 50  0000 C CNN
+F 0 "U7" H 1900 1265 50  0000 C CNN
 F 1 "BMX160" H 1900 1174 50  0000 C CNN
 F 2 "custom-footprints:BMX160" H 2350 1100 50  0001 L CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf" H 2350 1000 50  0001 L CNN
